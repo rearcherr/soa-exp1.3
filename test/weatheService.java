@@ -1,7 +1,13 @@
 import client.WeatherWebServiceLocator;
 import client.WeatherWebServiceSoap_PortType;
+import com.sun.org.apache.xml.internal.serialize.OutputFormat;
+import jdk.internal.util.xml.impl.XMLWriter;
 
+import javax.swing.text.Document;
 import javax.xml.rpc.ServiceException;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.rmi.RemoteException;
 
 public class weatheService {
@@ -21,4 +27,7 @@ public class weatheService {
             ex.printStackTrace();
         }
     }
+
+
+
 }
